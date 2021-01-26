@@ -1,0 +1,111 @@
+.filtersList {
+  width: 65.78vw;
+  margin: 0 auto;
+  margin-top: 110px;
+  border-bottom: 2px solid #bdbdbd;
+  .wrapper {
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    & > div {
+      color: #8c8c8c;
+      font-size: 13px;
+      font-weight: 300;
+      cursor: pointer;
+      transition: 0.3s ease opacity;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      height: 38px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .selected {
+      background-color: #00783f;
+      color: #fff;
+      height: 32px;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 1388px) {
+  .filtersList {
+    width: 904px;
+    .wrapper {
+      width: 540px;
+    }
+  }
+}
+@media screen and (max-width: 999px) {
+  .filtersList {
+    width: 690px;
+    .wrapper {
+      width: 540px;
+    }
+  }
+}
+@media screen and (max-width: 760px) {
+  .filtersList {
+    width: 90%;
+    padding-right: 10px;
+
+    .wrapper {
+      width: 540px;
+      width: 100%;
+      font-size: 11px;
+      padding-left: 23px;
+      & > div:nth-child(1) {
+        display: none;
+      }
+      & > div {
+        font-size: 12px;
+        .selected {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 533px) {
+  .filtersList {
+    height: 75px;
+    padding-left: 0;
+    .wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .filtersList {
+    width: 90%;
+    height: 60px;
+    padding-right: 10px;
+    .wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      & > div {
+        font-size: 11px;
+        height: 28px;
+      }
+      .selected {
+        font-size: 11px;
+        height: 28px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 327px) {
+  .filtersList {
+    height: 88px;
+  }
+}

@@ -1,0 +1,158 @@
+.productsList {
+  width: 65.78vw;
+  margin: 20px auto;
+  justify-content: flex-start;
+  display: flex;
+  position: relative;
+  right: 7px;
+  flex-wrap: wrap; }
+  .productsList .product {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 29.5%;
+    height: 436px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-bottom: 64px;
+    margin-left: 32px; }
+    .productsList .product .categoryLabels {
+      position: absolute;
+      top: -11px;
+      right: 2px; }
+      .productsList .product .categoryLabels img {
+        transform: scale(0.8);
+        position: relative; }
+    .productsList .product .name {
+      font-size: 17px;
+      font-weight: bold;
+      color: #353535;
+      text-transform: uppercase;
+      cursor: auto;
+      margin-top: 73px; }
+    .productsList .product .imgContainer {
+      cursor: pointer;
+      margin-top: 32px;
+      height: 152px; }
+    .productsList .product .description {
+      color: #353535;
+      font-weight: 600;
+      font-style: italic;
+      text-align: center;
+      cursor: auto;
+      height: 68px;
+      margin-top: 33px;
+      margin-bottom: 7px;
+      font-size: 14px; }
+      .productsList .product .description span {
+        color: #00783f;
+        cursor: pointer;
+        transition: 0.3s ease opacity; }
+        .productsList .product .description span:hover {
+          opacity: 0.8; }
+    .productsList .product .ctaButtons {
+      width: 70.4%;
+      margin: 0 auto;
+      display: flex; }
+      .productsList .product .ctaButtons > button {
+        width: 50%;
+        height: 31px;
+        outline: none;
+        border: none;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #00783f;
+        cursor: pointer;
+        transition: 0.3s ease opacity; }
+        .productsList .product .ctaButtons > button:hover {
+          opacity: 0.8; }
+      .productsList .product .ctaButtons .buy {
+        border-radius: 3px 0 0 3px;
+        position: relative; }
+        .productsList .product .ctaButtons .buy:after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          right: 0;
+          height: 27px;
+          width: 0px;
+          border-right: 2px solid #252525; }
+      .productsList .product .ctaButtons .addToCart {
+        border-radius: 0 3px 3px 0; }
+
+@media screen and (max-width: 1388px) {
+  .productsList {
+    width: 904px;
+    right: 7px; }
+    .productsList .product {
+      width: 29.5%; } }
+
+@media screen and (max-width: 999px) {
+  .productsList {
+    width: 690px;
+    right: 7px; }
+    .productsList .product {
+      width: 39%;
+      margin-left: 59px; } }
+
+@media screen and (max-width: 760px) {
+  .productsList {
+    width: 90%;
+    right: 7px; }
+    .productsList .product {
+      width: 277px;
+      margin-left: 37px; } }
+
+@media screen and (max-width: 728px) {
+  .productsList {
+    width: 90%;
+    right: 0; }
+    .productsList .product {
+      width: 64%;
+      margin-left: auto;
+      margin-right: auto; } }
+
+@media screen and (max-width: 515px) {
+  .productsList {
+    width: 90%;
+    right: 0; }
+    .productsList .product {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto; } }
+
+@media screen and (max-width: 460px) {
+  .productsList .product {
+    height: 390px;
+    padding-bottom: 10px; }
+    .productsList .product .categoryLabels {
+      top: -19px;
+      right: -4px; }
+      .productsList .product .categoryLabels img {
+        transform: scale(0.6); }
+    .productsList .product .name {
+      font-size: 15px;
+      width: 80%;
+      text-align: center; }
+    .productsList .product .imgContainer {
+      cursor: pointer;
+      margin-top: 19px;
+      height: 112px;
+      transform: scale(0.7); }
+    .productsList .product .description {
+      font-size: 13px;
+      width: 80%; }
+    .productsList .product .ctaButtons > button {
+      font-size: 11px; } }
+
+@media screen and (max-width: 365px) {
+  .productsList {
+    width: 90%;
+    right: 0; }
+    .productsList .product {
+      width: 85.5%;
+      margin-left: auto;
+      margin-right: auto; } }

@@ -1,0 +1,393 @@
+.navContainer {
+  width: 100%;
+  .top {
+    width: 100%;
+    height: 67px;
+    background-color: #e46c0a;
+    .topWrapper {
+      width: 65.78vw;
+
+      height: 67px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        position: relative;
+        top: 24.5px;
+        height: 119.5px;
+        object-fit: cover;
+        width: 244px;
+        width: 15.9vw;
+        cursor: pointer;
+        z-index: 2;
+      }
+      .locationInfo {
+        display: flex;
+        align-items: center;
+        img {
+          width: 26px;
+          height: 26px;
+        }
+        .wrapper {
+          margin-left: 13px;
+          color: #fffefe;
+          font-size: 12px;
+          font-weight: 300;
+          .title {
+            text-transform: uppercase;
+          }
+        }
+      }
+      .askForFree {
+        color: #fffefe;
+        font-size: 13px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: 0.3s ease opacity;
+        user-select: none;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .cart {
+        position: relative;
+        cursor: pointer;
+        transition: 0.3s ease opacity;
+        &:hover {
+          opacity: 0.8;
+        }
+        img {
+          width: 30px;
+          height: 22px;
+        }
+        .itemCount {
+          position: absolute;
+          top: -6px;
+          right: -5px;
+          width: 19px;
+          height: 19px;
+          background-color: #ff0000;
+          display: inline-block;
+          color: #fff;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+        }
+      }
+      .langSwitch {
+        color: #fffefe;
+        font-size: 13px;
+        font-weight: 300;
+        text-transform: uppercase;
+        transition: 0.3s ease opacity;
+        user-select: none;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+    height: 48px;
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+
+    .bottomWrapper {
+      width: 65.78vw;
+      height: 48px;
+      position: relative;
+      margin: 0 auto;
+
+      .anotherBottomWrapper {
+        height: 48px;
+        position: absolute;
+        right: 15px;
+        width: 595px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .home,
+        .aboutUs,
+        .products,
+        .news,
+        .contacts {
+          height: 42px;
+          padding-left: 20px;
+          position: relative;
+          &:before {
+            position: absolute;
+            left: 0;
+            height: 42px;
+            content: "";
+            border-right: 1px solid #252525;
+            border-left: 1px solid #4a4a4a;
+          }
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 42px;
+            width: 100%;
+            text-decoration: none;
+            color: #fffefe;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 300;
+            text-align: center;
+            transition: 0.3s ease opacity;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+        .searchContainer {
+          margin-left: 10px;
+          width: 139px;
+          position: relative;
+          outline: none;
+          input {
+            padding-left: 5px;
+            width: 160px;
+            outline: none;
+          }
+          img {
+            position: absolute;
+            top: 0;
+            right: -14px;
+            bottom: 0;
+            margin: auto;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .mWrapper,
+  .menuDropdown {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1388px) {
+  .navContainer {
+    .top {
+      .topWrapper {
+        width: 904px;
+
+        .logo {
+          width: 218px;
+        }
+        .locationInfo {
+          img {
+            width: 23px;
+            height: 23px;
+          }
+          .wrapper {
+            margin-left: 10px;
+            font-size: 11px;
+          }
+        }
+        .askForFree {
+          font-size: 12px;
+        }
+        .cart {
+          img {
+            width: 28px;
+            height: 20px;
+          }
+          .itemCount {
+            width: 18px;
+            height: 18px;
+            font-size: 11px;
+          }
+        }
+        .langSwitch {
+          font-size: 12px;
+        }
+      }
+    }
+    .bottom {
+      .bottomWrapper {
+        width: 904px;
+
+        .anotherBottomWrapper {
+          width: 590px;
+
+          .home,
+          .aboutUs,
+          .products,
+          .news,
+          .contacts {
+            a {
+              font-size: 10.8px;
+            }
+          }
+          .searchContainer {
+            img {
+              right: -15px;
+              transform: scale(0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .navContainer {
+    .top {
+      .topWrapper {
+        width: 690px;
+
+        .logo {
+          width: 180px;
+        }
+        .locationInfo {
+          visibility: hidden;
+          width: 90px;
+        }
+        .cart {
+          img {
+            width: 26px;
+            height: 18px;
+          }
+          .itemCount {
+            width: 16px;
+            height: 16px;
+            font-size: 10px;
+          }
+        }
+        .langSwitch {
+          font-size: 11px;
+        }
+      }
+    }
+    .bottom {
+      .bottomWrapper {
+        width: 690px;
+
+        .anotherBottomWrapper {
+          width: 450px;
+
+          .home,
+          .aboutUs,
+          .products,
+          .news,
+          .contacts {
+            padding-left: 13px;
+            a {
+              font-size: 9px;
+            }
+          }
+          .searchContainer {
+            width: 110px;
+            input {
+              width: 130px;
+            }
+            img {
+              right: -16px;
+              transform: scale(0.8);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .navContainer {
+    .top,
+    .bottom {
+      display: none;
+    }
+    position: relative;
+    height: 60px;
+    background-color: #e46c0a;
+
+    .mWrapper {
+      height: 60px;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logoMobile {
+        width: 170px;
+        height: 60px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .hamburgerMenu {
+        cursor: pointer;
+        transition: 0.3s ease opacity;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .menuDropdown {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #353535;
+      z-index: 10;
+      padding: 0;
+
+      .dWrapper {
+        transition: 0.3s ease all;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+
+        .item {
+          margin: 0 auto;
+          text-transform: uppercase;
+          font-size: 12px;
+          margin-bottom: 10px;
+          cursor: pointer;
+          transition: 0.3s ease all;
+          color: #fff;
+          font-weight: 300;
+          width: 100%;
+          text-align: center;
+          padding-top: 14px;
+          padding-bottom: 14px;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+            background-color: #e46c0a;
+          }
+        }
+      }
+    }
+    .menuDropdownOpen {
+      padding-top: 28px;
+      padding-bottom: 20px;
+      .dWrapper {
+        height: 323px;
+        opacity: 1;
+      }
+    }
+  }
+}

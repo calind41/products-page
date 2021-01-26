@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='dist/css/styles.css'>
+    <link rel='stylesheet' href='dist/css/nav.css'>
+    <link rel='stylesheet' href='dist/css/filtersList.css'>
+    <link rel='stylesheet' href='dist/css/productsList.css'>
+    <link rel='stylesheet' href='dist/css/footer.css'>
+</head>
+<body>
+    <nav class='navContainer'>
+        <div class='top'>
+            <div class='topWrapper'>
+                <img class='logo' src='./static/svg/logo.svg' alt='logo'/>
+                <div class='locationInfo'>
+                    <img src='./static//svg/locationIcon.svg' alt='locationIcon' />
+                    <div class='wrapper'>
+                        <div class='title'>our location</div>
+                        <div>411 - 19th STREET S.E., CALGARY, ALBERTA</div>
+                    </div>
+                </div>
+                <div class='askForFree'>Ask a veterinarian online for free</div>
+                <div class='cart'>
+                    <img src='./static/svg/cart.svg' alt='cartIcon' />
+                    <span class='itemCount'>0</span>
+                </div>
+                <div class='langSwitch'>en / fr</div>
+            </div>
+        </div>
+        <div class='bottom'>
+            <div class='bottomWrapper'>
+                <div class='anotherBottomWrapper'>
+                    <div class='home'>
+                        <a href='#'>home</a>
+                    </div>
+                    <div class='aboutUs'>
+                        <a href='#'>about us</a>
+                    </div>
+                    <div class='products'>
+                        <a href='#'>products</a>
+                    </div>
+                    <div class='news'>
+                        <a href='#'>news</a>
+                    </div>
+                    <div class='contacts'>
+                        <a href='#'>contacts</a>
+                    </div>
+                    <div class='searchContainer'>
+                        <input type='text' placeholder='search' value=''/>
+                        <img src='./static/svg/searchIcon.svg' alt='searchIcon'/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- for mobile version -->
+        <div class='mWrapper'>
+            <div class='logoMobile'>
+                <img  src='./static/svg/logo.svg' alt='logo'/>
+            </div>
+            <div class='hamburgerMenu'>
+                <img src='./static/svg/menu-24px.svg' alt='menu icon' />
+            </div>
+        </div>
+        <div class='menuDropdown'>
+            <div class='dWrapper'>
+                <div class='item'>ask a veterinarian for help</div>
+                <div class='item'>home</div>
+                <div class='item'>about us</div>
+                <div class='item'>products</div>
+                <div class='item'>news</div>
+                <div class='item'>contacts</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class='filtersList'>
+        <div class='wrapper'>
+            <div class='title '>filter:</div>
+            <div class='all selected'>all</div>
+            <div class='farmAnimals '>farm animals</div>
+            <div class='companionAnimals '>companion animals</div>
+            <div class='sanitation'>sanitation</div>
+            <div class='top '>top</div>
+        </div>
+    </section>
+
+    <main class='productsList'>
+    </main>
+    
+    <footer class='footer'>
+        <div class='wrapper'>
+            <div class='productsAndAboutUs'>
+                <div class='products'>
+                    <h1 class='greenh1'>Products</h1>
+                    <div>Farm Animals</div>
+                    <div>Companion Animals</div>
+                    <div>Sanitation</div>
+                </div>
+                <div class='aboutUs'>
+                    <h1 class='greenh1'>About Us</h1>
+                    <div>Resources</div>
+                    <div>Carrier</div>
+                    <div>News</div>
+                </div>
+            </div>
+            <div class='contactUs'>
+                <div class='info'>
+                    <h1 class='greenh1'>Contact Us</h1>
+                    <div>
+                        <img src='./static/svg/home-24px.svg' alt='home icon'/>
+                        <span class='text'>
+                            Alberta Veterinary Laboratories<br/>
+                            411 - 19th Street S.E.<br/>
+                            Calgary, AB, T2E 6J7
+                        </span>
+                    </div>
+                    <div>
+                        <img src='./static/svg/local_phone-24px.svg' alt='phone icon'/>
+                        <span class='text'>
+                            Toll Free: <span>1.877.456.2755</span>
+                        </span>
+                    </div>
+                    <div>
+                        <img src='./static/svg/local_phone-24px.svg' alt='phone icon'/>
+                        <span class='text'>
+                            Telephone: <span>1.403.456.2245</span>
+                        </span>
+                    </div>
+                    <div>
+                        <img src='./static/svg/telephone.svg' alt='landline telephone icon'/>
+                        <span class='text'>
+                            Facsimile: <span>1.403.207.6074</span>
+                        </span>
+                    </div>
+                    <div>
+                        <img src='./static/svg/telephone.svg' alt='landline telephone icon'/>
+                        <span class='text'>
+                            Toll Free Facsimile: <span>1.888.620.6074</span>
+                        </span>
+                    </div>
+                    <div>
+                        <img src='./static/svg/format_list_bulleted-24px.svg' alt='unordered list icon'/>
+                        <span class='text'>
+                            Business Hours: M-F, 09:00 - 16:30
+                        </span>
+                    </div>
+                </div>
+                <form class='form'>
+                    <h1>form</h1>
+                    <input id='fullName' type='text' placeholder="Name & Surname" value=''/>
+                    <input id='email' type='email' placeholder="Email address" value=''/>
+                    <input id='subject' type='text' placeholder="Subject" value='' />
+                    <textarea id='message' placeholder="Your message"></textarea>
+                    <button id='submitFormBtn'>send</button>
+                </form>
+            </div>
+        </div>
+        <div id='mapId' class='map'></div>
+        <div class='copyright'>
+            copyright &copy; 2014 alberta veterinary laboratories ltd
+        </div>
+    </footer>
+    <script src='dist/js/inits.js'></script>
+    <script src='dist/js/data.js'></script>
+    <script src='dist/js/renderProducts.js'></script>
+    <script src='dist/js/index.js'></script>
+
+</body>
+</html>
